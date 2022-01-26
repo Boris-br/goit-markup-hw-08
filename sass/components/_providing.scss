@@ -1,5 +1,10 @@
 .providing {
    padding-top: 0px;
+
+   @include mq(notDesktop) {
+      display: none;
+   }
+
    &__discription {
       display: flex;
    }

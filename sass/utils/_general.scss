@@ -23,54 +23,6 @@
    color: var(--secondary-text-color);
 }
 
-// блок соц сетей
-// .team__social--list {
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-// }
-
-// .team__social--wrapper {
-//    margin-right: 10px;
-
-//    &:last-child {
-//       margin-right: 0px;
-//    }
-//    &:hover,
-//    &:focus {
-//       transition: var(--transition-property);
-//    }
-//    .team__social--link {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 44px;
-//       height: 44px;
-//       border-radius: 50%;
-//       transition: var(--transition-property);
-//    }
-//    .team__social--icon {
-//       width: 20px;
-//       height: 20px;
-//       margin: auto;
-//       fill: #afb1b8;
-//       transition: var(--transition-property);
-//    }
-// }
-
-// .team__social--link:hover,
-// .team__social--link:focus {
-//    background-color: var(--accent-color);
-//    transition: var(--transition-property);
-
-// .team__social--wrapper:hover .team__social--icon,
-// .team__social--wrapper:focus .team__social--icon {
-//    fill: var(--primary-white-color);
-//    transition: var(--transition-property);
-// }
-
-//// ссылки с футора
-
 .footer .team__social-link {
    background-color: rgba(255, 255, 255, 0.1);
    &:hover,
