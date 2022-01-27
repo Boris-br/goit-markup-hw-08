@@ -787,44 +787,19 @@ a {
 }
 
 /* card-collection  */
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-  }
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio__card {
+  margin-right: 30px;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .portfolio__card {
-    margin: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__card {
-    margin-right: 30px;
-  }
 }
 
 .portfolio__card:nth-child(n + 7) {
