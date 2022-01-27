@@ -5,9 +5,14 @@
 .header__container {
    display: flex;
    align-items: center;
+   @include mq(tablet) {
+   }
 }
 
 .nav {
+   @include mq(mobile-only) {
+      display: none;
+   }
    margin-left: 93px;
 
    &__list {
@@ -63,13 +68,30 @@
 }
 
 .contact {
-   display: flex;
+   display: block;
    margin-left: auto;
 
-   &__list {
+   @include mq(mobile-only) {
+      display: none;
+   }
+   @include mq(desktop) {
       display: flex;
-      align-items: center;
-      margin-right: 50px;
+      margin-left: auto;
+   }
+
+   &__list {
+      @include mq(tablet) {
+         display: flex;
+         align-items: center;
+      }
+      @include mq(tablet-only) {
+         &:first-child {
+            margin-bottom: 10px;
+         }
+      }
+      @include mq(desktop) {
+         margin-right: 50px;
+      }
 
       &:last-child {
          margin-right: 0;
@@ -78,15 +100,19 @@
    &__link {
       display: flex;
       align-items: center;
-      padding-top: 32px;
-      padding-left: 10px;
-      padding-bottom: 32px;
+
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
       color: var(--primary-text-color);
       text-decoration-line: none;
+
+      @include mq(desktop) {
+         padding-top: 32px;
+         padding-left: 10px;
+         padding-bottom: 32px;
+      }
 
       &:hover,
       &:focus {
@@ -98,4 +124,38 @@
       margin-right: 10px;
       fill: currentColor;
    }
+}
+
+.mobile-menu {
+   display: none;
+
+   @include mq(mobile-only) {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      width: 40px;
+      padding: 0;
+
+      background-color: transparent;
+      margin-left: auto;
+      border: none;
+      z-index: 100;
+   }
+
+   &:hover .mobile-menu-icon {
+      fill: var(--btn-acent-color);
+      cursor: pointer;
+   }
+   &-close {
+      display: none;
+   }
+}
+.mobile-menu.is-open .mobile-menu-open {
+   display: none;
+}
+.mobile-menu.is-open .mobile-menu-close {
+   display: block;
 }

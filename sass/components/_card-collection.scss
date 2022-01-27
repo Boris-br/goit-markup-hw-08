@@ -1,13 +1,27 @@
 /* card-collection  */
 .portfolio {
-   display: flex;
-   flex-wrap: wrap;
-   margin-right: -30px;
-   margin-bottom: -30px;
+   @include mq(tablet-only) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+   }
+   @include mq(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+   }
 
    &__card {
-      margin-right: 30px;
       margin-bottom: 30px;
+      @include mq(tablet-only) {
+         margin: 30px;
+      }
+
+      @include mq(desktop) {
+         margin-right: 30px;
+      }
    }
    &__card:nth-child(n + 7) {
       margin-bottom: 0;

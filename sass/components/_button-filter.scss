@@ -1,14 +1,32 @@
 .filter {
    display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-bottom: 50px;
-   margin-right: 8px;
+   justify-content: start;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+
+   @include mq(tablet-only) {
+      justify-content: center;
+      margin-bottom: 14px;
+   }
+   @include mq(desktop) {
+      justify-content: center;
+      margin-bottom: 50px;
+   }
 
    &__item {
       margin-right: 8px;
       &:last-child {
          margin-right: 0;
+      }
+      margin-bottom: 15px;
+      &:nth-child(n + 4) {
+         margin-bottom: 0px;
+      }
+      @include mq(tablet-only) {
+         margin-bottom: 0px;
+      }
+      @include mq(desktop) {
+         margin-bottom: 0px;
       }
    }
    &__btn {
