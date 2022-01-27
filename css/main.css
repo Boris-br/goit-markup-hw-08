@@ -1139,17 +1139,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
 @media screen and (max-width: 1199.98px) {
   .footer__mobile {
     margin-bottom: 60px;
@@ -1183,7 +1172,13 @@ a {
 }
 
 .footer__content {
-  margin-right: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
