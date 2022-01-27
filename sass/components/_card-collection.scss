@@ -1,9 +1,11 @@
 /* card-collection  */
 .portfolio {
-   display: flex;
-   flex-wrap: wrap;
-   margin-right: -30px;
-   margin-bottom: -30px;
+   @include mq(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+   }
 
    &__card {
       @include mq(desktop) {
