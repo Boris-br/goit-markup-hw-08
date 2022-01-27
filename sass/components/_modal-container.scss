@@ -40,7 +40,8 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   width: 528px;
+   min-width: 450px;
+   max-width: 528px;
    padding: 40px;
    text-align: left;
    text-transform: none;
