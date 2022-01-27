@@ -7,7 +7,7 @@
       text-align: center;
       letter-spacing: 0.03em;
 
-      @include mq(tablet) {
+      @include mq(tablet-only) {
          display: flex;
          flex-wrap: wrap;
          margin: -15px;
@@ -26,17 +26,21 @@
          0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       background-color: var(--primary-white-color);
-      @include mq(tablet) {
-         max-width: 354px;
 
+      @include mq(tablet-only) {
          width: calc(100% / 2 - 30px);
          margin: 15px;
          &:nth-last-child(-n + 2) {
             margin-bottom: 0;
          }
-         @include mq(desktop) {
-            max-width: 270px;
-            margin-bottom: 0px;
+      }
+
+      @include mq(desktop) {
+         flex-basis: 270px;
+         margin: 15px;
+         margin: 0px 30px 0px 0px;
+         &:last-child {
+            margin-right: 0;
          }
       }
    }
