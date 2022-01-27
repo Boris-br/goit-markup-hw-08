@@ -4,21 +4,21 @@
       display: flex;
       flex-wrap: wrap;
       margin-right: -30px;
-      margin-bottom: -30px;
    }
 
    &__card {
+      margin-bottom: 30px;
       @include mq(desktop) {
          margin-right: 30px;
-         margin-bottom: 30px;
+
          &:nth-child(n + 7) {
             margin-bottom: 0;
          }
       }
    }
    &__link {
-      display: block;
-      width: 370px;
+      display: inline-block;
+      margin: -1px;
       border: 1px solid #eeeeee;
 
       &:hover,

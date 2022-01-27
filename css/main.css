@@ -795,14 +795,16 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-right: -30px;
-    margin-bottom: -30px;
   }
+}
+
+.portfolio__card {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio__card {
     margin-right: 30px;
-    margin-bottom: 30px;
   }
   .portfolio__card:nth-child(n + 7) {
     margin-bottom: 0;
@@ -810,8 +812,8 @@ a {
 }
 
 .portfolio__link {
-  display: block;
-  width: 370px;
+  display: inline-block;
+  margin: -1px;
   border: 1px solid #eeeeee;
 }
 
