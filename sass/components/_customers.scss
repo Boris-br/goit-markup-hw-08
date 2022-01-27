@@ -19,10 +19,12 @@
    }
    &__card {
       display: flex;
+      width: calc(100% / 2);
+      max-width: 210px;
       margin-bottom: 30px;
       align-items: center;
       justify-content: center;
-      width: 210px;
+      max-width: 210px;
       height: 92px;
       border: 1px solid #afb1b8;
       border-radius: 4px;
