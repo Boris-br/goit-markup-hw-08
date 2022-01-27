@@ -1219,6 +1219,12 @@ a {
   transition: var(--transition-property);
 }
 
+.footer__social-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__social-list {
     margin-left: 165px;
