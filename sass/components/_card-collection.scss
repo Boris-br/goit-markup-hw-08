@@ -6,10 +6,12 @@
    margin-bottom: -30px;
 
    &__card {
-      margin-right: 30px;
-      margin-bottom: 30px;
-      &:nth-child(n + 7) {
-         margin-bottom: 0;
+      @include mq(desktop) {
+         margin-right: 30px;
+         margin-bottom: 30px;
+         &:nth-child(n + 7) {
+            margin-bottom: 0;
+         }
       }
    }
    &__link {
