@@ -815,7 +815,7 @@ a {
 }
 
 .portfolio__link {
-  display: inline-block;
+  display: block;
   margin: -1px;
   border: 1px solid #eeeeee;
 }
@@ -859,6 +859,11 @@ a {
   color: var(--primary-white-color);
   font-size: 18px;
   line-height: 1.55;
+}
+
+.portfolio__img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio__container {
