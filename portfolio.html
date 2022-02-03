@@ -22,10 +22,72 @@
       <title>Portfolio</title>
    </head>
    <body>
-      <!-- Header  -->
+      <!-- Header -->
       <header class="header">
          <div class="header__container container">
             <a href="./index.html" class="logo"><span class="logo__highlight">Web</span>Studio</a>
+
+            <button
+               class="mobile-menu"
+               type="button"
+               aria-expanded="false"
+               data-menu-button
+               aria-controls="mobile-modal"
+            >
+               <svg class="mobile-menu-icon" width="40" height="40" aria-label="кнопка меню">
+                  <use
+                     class="mobile-menu-open"
+                     href="./images/symbol-defs.svg#icon-menu_40px"
+                  ></use>
+                  <use
+                     class="mobile-menu-close"
+                     href="./images/symbol-defs.svg#icon-close_40px"
+                  ></use>
+               </svg>
+            </button>
+            <div class="mobile-modal data-menu" data-menu id="mobile-modal">
+               <ul class="mobile-list">
+                  <li class="mobile-item">
+                     <a href="./index.html" class="mobile-link">Студия</a>
+                  </li>
+                  <li class="mobile-item">
+                     <a href="./portfolio.html" class="mobile-link active">Портфолио</a>
+                  </li>
+                  <li class="mobile-item">
+                     <a href="" class="mobile-link">Контакты</a>
+                  </li>
+               </ul>
+               <div class="mobile-modal-wrap">
+                  <ul class="mobile-contacts">
+                     <li class="mobile-contacts-item">
+                        <a
+                           class="mobile-contacts-link mobile-contacts-link-active"
+                           href="tel:380961111111"
+                           >+38 096 111 11 11</a
+                        >
+                     </li>
+                     <li class="mobile-contacts-item">
+                        <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                           >info@devstudio.com</a
+                        >
+                     </li>
+                  </ul>
+                  <ul class="mobile-socials">
+                     <li class="mobile-socials-item">
+                        <a class="mobile-socials-link" href="">Instagram</a>
+                     </li>
+                     <li class="mobile-socials-item">
+                        <a class="mobile-socials-link" href="">Twitter</a>
+                     </li>
+                     <li class="mobile-socials-item">
+                        <a class="mobile-socials-link" href="">Facebook</a>
+                     </li>
+                     <li class="mobile-socials-item">
+                        <a class="mobile-socials-link" href="">LinkedIn</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
 
             <nav class="nav">
                <ul class="nav__list">
@@ -60,6 +122,7 @@
             </ul>
          </div>
       </header>
+
       <!-- Панель кнопок  -->
       <main>
          <section class="section">
