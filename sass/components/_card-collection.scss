@@ -3,15 +3,20 @@
    @include mq(tablet) {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -30px;
+      margin: -15px;
+      justify-content: space-between;
+   }
+
+   @include mq(desktop) {
       justify-content: space-between;
    }
 
    &__card {
-      margin-bottom: 30px;
+      margin: 15px;
+      @include mq(tablet-only) {
+         max-width: 350px;
+      }
       @include mq(desktop) {
-         margin-right: 30px;
-
          &:nth-child(n + 7) {
             margin-bottom: 0;
          }

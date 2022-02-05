@@ -940,7 +940,15 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
+    margin: -15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -948,13 +956,16 @@ a {
 }
 
 .portfolio__card {
-  margin-bottom: 30px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__card {
+    max-width: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__card {
-    margin-right: 30px;
-  }
   .portfolio__card:nth-child(n + 7) {
     margin-bottom: 0;
   }
