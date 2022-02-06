@@ -1,3 +1,10 @@
+.header {
+   @include mq(mobile-only) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+}
+
 .header__border {
    border-bottom: 1px solid #ececec;
 }
@@ -7,9 +14,9 @@
    position: relative;
    align-items: center;
 
-   @include mq(mobile-only) {
-      padding: 10px 0px;
-   }
+   // @include mq(mobile-only) {
+   //    padding: 10px 0px;
+   // }
 
    &:nth-child(2) {
       background-color: orange;

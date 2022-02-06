@@ -6,7 +6,7 @@
 
    @include mq(tablet-only) {
       justify-content: center;
-      margin-bottom: 14px;
+      margin-bottom: 30px;
    }
    @include mq(desktop) {
       justify-content: center;

@@ -19,8 +19,7 @@
    }
    &__card {
       display: flex;
-      width: calc(100% / 2);
-      max-width: 210px;
+      width: calc(100% / 2 - 15px);
       margin-bottom: 30px;
       align-items: center;
       justify-content: center;
